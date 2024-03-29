@@ -1,0 +1,110 @@
+/* General Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("https://source.unsplash.com/random/1920x1080?money"); /* Change the background to a money-related image */
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.App {
+  width: 100%;
+  max-width: 600px; /* Adjust width as needed */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Ensure consistent margin for all inputs and button */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #4caf50; /* A green color for the button */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Expense List Styling */
+ul {
+  list-style-type: none;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete Button */
+li button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px; /* Adjusted to ensure the button doesn't stretch */
+  width: auto; /* Adjust width as necessary */
+  height: 30px; /* Fixed height to prevent stretching */
+  font-size: 0.8rem;
+}
+
+li button:hover {
+  background-color: #d32f2f;
+}
+
+/* Total Expenses Styling */
+.total-expenses {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffeb3b; /* Bright yellow for visibility */
+  color: #333; /* Dark text for contrast */
+  border-radius: 5px;
+  font-weight: bold;
+  width: 50%; /* Make the box smaller */
+  margin-left: auto;
+  margin-right: auto;
+}
